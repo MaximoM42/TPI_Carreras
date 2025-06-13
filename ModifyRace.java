@@ -39,7 +39,7 @@ public class ModifyRace extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Modificar Carrera");
+        jLabel1.setText(" Carrera");
 
         ConfirmModifyRace.setBackground(new java.awt.Color(28, 33, 53));
         ConfirmModifyRace.setForeground(new java.awt.Color(255, 255, 255));
