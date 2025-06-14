@@ -7,6 +7,9 @@ public class TPISistemaDeCarreras {
     public static void main(String[] args) {
         ConexionDB dbc = new ConexionDB();
         dbc.Conectar();
+        
+        MainMenu menuPrincipal = new MainMenu();
+        
+        menuPrincipal.setVisible(true);
     }
-    
 }
