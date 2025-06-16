@@ -2,7 +2,7 @@ package tpi.sistema.de.carreras.TPI_Carreras;
 import java.sql.*;
 
 public class ConexionDB {
-    static String url = "jdbc:mysql://localhost:3306/sistema_carreras";
+    static String url = "http://localhost/phpmyadmin/index.php?route=/database/structure&db=sistema_carrera";
     static String user = "root";
     static String pass = "";
     
