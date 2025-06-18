@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tpi.sistema.de.carreras;
+package tpi.sistema.de.carreras.TPI_Carreras;
 
 /**
  *
@@ -59,6 +59,9 @@ public class MainMenuADM extends javax.swing.JFrame {
         AddPlace = new javax.swing.JButton();
         ModifyPlace = new javax.swing.JButton();
         DeletePlace = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -281,6 +284,17 @@ public class MainMenuADM extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Actualizaciones");
+
+        jTextArea1.setBackground(new java.awt.Color(52, 62, 103));
+        jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setRows(5);
+        jTextArea1.setText("1.0.3 Se agrego la funcionalidad de Agregar Usuarios y Administradores.\n1.0.2 Se hizo la conexion local con la Base de Datos.\n1.0.1 Se agregaron las IUs Menu Principal, Log In, Menu Principal de \nAdministrador y las IUs de Gestion de Carreras, Usuarios, Administra_\n_dores, Circuitos y Ubicaciones.");
+        jScrollPane6.setViewportView(jTextArea1);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -289,45 +303,46 @@ public class MainMenuADM extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(jLabel2)
-                        .addGap(164, 164, 164))
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(LogOut))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(LogOut))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(AddRace)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(ModifyRace)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(DeleteRace))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(AddUser)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(ModifyUser)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(DeleteUser))
-                                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING))
-                                        .addComponent(jLabel4)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(AddTrack)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                            .addComponent(AddRace)
                                             .addGap(18, 18, 18)
-                                            .addComponent(ModifyTrack)
+                                            .addComponent(ModifyRace)
                                             .addGap(18, 18, 18)
-                                            .addComponent(DeleteTrack))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                                            .addComponent(DeleteRace))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                            .addComponent(AddUser)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(ModifyUser)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(DeleteUser))
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jLabel4)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(AddTrack)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(ModifyTrack)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(DeleteTrack))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(jLabel2)))
+                        .addGap(29, 29, 29)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                            .addComponent(jScrollPane5)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel5)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(AddAdmin)
@@ -335,15 +350,17 @@ public class MainMenuADM extends javax.swing.JFrame {
                                         .addComponent(ModifyAdmin)
                                         .addGap(18, 18, 18)
                                         .addComponent(DeleteAdmin))
-                                    .addComponent(jScrollPane5)
                                     .addComponent(jLabel6)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(AddPlace)
                                         .addGap(18, 18, 18)
                                         .addComponent(ModifyPlace)
                                         .addGap(18, 18, 18)
-                                        .addComponent(DeletePlace)))))
-                        .addContainerGap())))
+                                        .addComponent(DeletePlace))
+                                    .addComponent(jLabel7))
+                                .addGap(0, 138, Short.MAX_VALUE))
+                            .addComponent(jScrollPane6))))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -352,14 +369,19 @@ public class MainMenuADM extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(LogOut))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddRace)
-                    .addComponent(ModifyRace)
-                    .addComponent(DeleteRace))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(AddRace)
+                            .addComponent(ModifyRace)
+                            .addComponent(DeleteRace))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -405,7 +427,7 @@ public class MainMenuADM extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addGap(0, 7, Short.MAX_VALUE))
         );
 
         pack();
@@ -476,7 +498,7 @@ public class MainMenuADM extends javax.swing.JFrame {
         DeleteTrack d = new DeleteTrack();
         d.setVisible(true);
     }//GEN-LAST:event_DeleteTrackActionPerformed
-
+// PLACE'S -------------------------------------------------------------------------------------
     private void AddPlaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddPlaceActionPerformed
         AddPlace a = new AddPlace();
         a.setVisible(true);
@@ -551,6 +573,7 @@ public class MainMenuADM extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JList<String> jList3;
@@ -562,5 +585,7 @@ public class MainMenuADM extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
