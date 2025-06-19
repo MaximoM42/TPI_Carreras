@@ -28,7 +28,14 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
           <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+=======
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+          </Group>
+>>>>>>> 737d28d090a2d044b60e2b059fdea4440cb98a4d
       </Group>
     </DimensionLayout>
   </Layout>
@@ -51,6 +58,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="LogOut" min="-2" max="-2" attributes="0"/>
                       </Group>
+<<<<<<< HEAD
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="jScrollPane8" alignment="0" pref="340" max="32767" attributes="0"/>
@@ -68,10 +76,46 @@
                                   <Component id="ModifyTrack" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="DeleteTrack" min="-2" max="-2" attributes="0"/>
+=======
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jScrollPane3" alignment="0" pref="400" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="AddRace" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="ModifyRace" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="DeleteRace" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="AddUser" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="ModifyUser" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="DeleteUser" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="AddTrack" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="ModifyTrack" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="DeleteTrack" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+>>>>>>> 737d28d090a2d044b60e2b059fdea4440cb98a4d
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="AddUser" min="-2" max="-2" attributes="0"/>
@@ -108,6 +152,38 @@
                               <Component id="jScrollPane6" alignment="0" pref="384" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
+=======
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane4" pref="400" max="32767" attributes="0"/>
+                              <Component id="jScrollPane5" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="AddAdmin" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="ModifyAdmin" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="DeleteAdmin" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="AddPlace" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="ModifyPlace" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="DeletePlace" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="138" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane6" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+>>>>>>> 737d28d090a2d044b60e2b059fdea4440cb98a4d
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -122,6 +198,7 @@
                       <Component id="LogOut" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -164,6 +241,38 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jScrollPane8" min="-2" pref="125" max="-2" attributes="0"/>
                       <Component id="jScrollPane9" min="-2" pref="125" max="-2" attributes="0"/>
+=======
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AddRace" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ModifyRace" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DeleteRace" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="94" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane6" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="AddUser" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ModifyUser" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DeleteUser" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="AddAdmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ModifyAdmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DeleteAdmin" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 737d28d090a2d044b60e2b059fdea4440cb98a4d
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -525,6 +634,7 @@
             </Component>
           </SubComponents>
         </Container>
+<<<<<<< HEAD
         <Container class="javax.swing.JScrollPane" name="jScrollPane7">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -777,6 +887,8 @@
             </Component>
           </SubComponents>
         </Container>
+=======
+>>>>>>> 737d28d090a2d044b60e2b059fdea4440cb98a4d
       </SubComponents>
     </Container>
   </SubComponents>

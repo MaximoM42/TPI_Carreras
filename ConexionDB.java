@@ -47,7 +47,7 @@ public class ConexionDB {
         return con;
     }
       
-        public static Connection Add(String newUser, String newPassword, String newVehicle) // Se agrega un nuevo Administrador
+        public static Connection Add(String newUser, String newPassword, String newVehicle) // Se agrega un nuevo Administador
     {
         Connection con = null;
         
@@ -70,6 +70,7 @@ public class ConexionDB {
         
         return con;
     }
+
 // DELETE ------------------------------------------------------------------------------------------------------
 // UPDATE ------------------------------------------------------------------------------------------------------
 // COMBOBOX ------------------------------------------------------------------------------------------------------

@@ -100,13 +100,15 @@ public class MainMenu extends javax.swing.JFrame {
         ResultTable.setGridColor(new java.awt.Color(28, 33, 53));
         jScrollPane2.setViewportView(ResultTable);
 
+        ImagePodium.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tpi/sistema/de/carreras/TPI_Carreras/Podium 150x40.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane2)
                         .addContainerGap())
@@ -248,4 +250,21 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
+    
+   /* class FondoPanel extends MainMenu // No funciona, es para agregar una imagen de fondo
+    {
+        private Image imagen;
+        
+        @Override
+        public void paint(Graphics g){
+            imagen = new ImageIcon(getClass().getResource("/Imagenes/TrackOriginal.png")).getImage();
+            
+            g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+            
+            //setOpaque(false);
+            
+            super.paint(g);
+        }
+    }*/
+
 }
