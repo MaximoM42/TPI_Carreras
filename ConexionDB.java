@@ -30,6 +30,65 @@ public class ConexionDB {
      * @return
      */
 // ADD
+    public static boolean Add(int raceid, int lapAmount, java.sql.Date date, int idTrack, java.util.List<String[]> posiciones) { // Se agrega una carrera
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
+        try {
+            con = Conectar();
+
+            // 1. Insertar en race
+            String insertRace = "INSERT INTO race (id, lapAmount, date, IDTRACK) VALUES (?, ?, ?, ?)";
+            pst = con.prepareStatement(insertRace, Statement.RETURN_GENERATED_KEYS);
+            pst.setInt(1, raceid);
+            pst.setInt(2, lapAmount);
+            pst.setDate(3, date);
+            pst.setInt(4, idTrack);
+            pst.executeUpdate();
+
+            rs = pst.getGeneratedKeys();
+            int idRace = -1;
+            if (rs.next()) {
+                idRace = rs.getInt(1);
+            } else {
+                return false; // No se pudo obtener el ID
+            }
+
+            pst.close();
+            rs.close();
+
+            // 2. Insertar en userxrace
+            String insertUserxRace = "INSERT INTO userxrace (IDUSER, IDRACE, position) VALUES (?, ?, ?)";
+            pst = con.prepareStatement(insertUserxRace);
+
+            for (String[] fila : posiciones) {
+                int position = Integer.parseInt(fila[0]); // posición
+                int idUser = Integer.parseInt(fila[1]);   // ID del usuario
+
+                pst.setInt(1, idUser);
+                pst.setInt(2, idRace);
+                pst.setInt(3, position);
+                pst.addBatch();
+            }
+
+            pst.executeBatch();
+            return true;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+
+        } finally {
+            try {
+                if (pst != null) pst.close();
+                if (con != null) con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public static Connection Add(String newUser, String newVehicle) // Se agrega un nuevo Usuario
     {
         Connection con = null;
@@ -76,6 +135,38 @@ public class ConexionDB {
         }
         
         return con;
+    }
+// GET LAST RACE
+    public static int getNextRaceId() {
+         int nextId = 1;
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
+        try {
+            con = Conectar();
+            String query = "SELECT MAX(id) as maxId FROM race";
+            pst = con.prepareStatement(query);
+            rs = pst.executeQuery();
+
+            if (rs.next()) {
+                int maxId = rs.getInt("maxId");
+                if (!rs.wasNull()) {
+                    nextId = maxId + 1;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pst != null) pst.close();
+                if (con != null) con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return nextId;
     }
 
 // COMBO BOX
