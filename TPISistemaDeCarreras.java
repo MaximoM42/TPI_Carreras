@@ -1,6 +1,6 @@
-package tpi.sistema.de.carreras;
+package tpi.sistema.de.carreras.TPI_Carreras;
 
-import tpi.sistema.de.carreras.TPI_Carreras.ConexionDB;
+
 
 public class TPISistemaDeCarreras {
 
